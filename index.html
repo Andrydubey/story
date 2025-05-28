@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Love Story 💕</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Welcome Section -->
+    <section id="welcome" class="active">
+        <div class="hearts-container"></div>
+        <h1 class="title">Our Journey of Love 💕</h1>
+        <h2 class="subtitle">From School Desks to Forever Together</h2>
+        <button class="start-btn" onclick="startStory()">Start Our Story 💌</button>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story">
+        <!-- Audio Player -->
+        <audio id="background-music" loop>
+            <source src="./public/music/raabta.mp3" type="audio/mp3">
+        </audio>
+
+        <!-- Video Reel -->
+        <div class="video-section">
+            <h2 class="section-title">Cutie Moments 💕</h2>
+            <div class="reel-container">
+                <video id="reel-video" loop muted playsinline>
+                    <source src="./public/videos/202505270919.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="content">
+                    <h3>2002</h3>
+                    <h4>First Meeting</h4>
+                    <p>Our paths crossed in school on 12th May</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content">
+                    <h3>2003</h3>
+                    <h4>Friendship Blooms</h4>
+                    <p>From classmates to best friends</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="content">
+                    <h3>2018</h3>
+                    <h4>The Proposal</h4>
+                    <p>A magical moment during 12th grade</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content">
+                    <h3>2025</h3>
+                    <h4>Forever Together</h4>
+                    <p>Our beautiful wedding day</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Photo Gallery -->
+        <div class="photo-gallery">
+            <div class="photo-card">
+                <div class="photo-image" style="background-image: url('./public/images/download.jpeg')"></div>
+                <h3>First Meeting 💝</h3>
+                <p>The day our eyes met, and my heart knew it was you</p>
+            </div>
+            <div class="photo-card">
+                <div class="photo-image" style="background-image: url('./public/images/love🤍.jpeg')"></div>
+                <h3>First Date 💑</h3>
+                <p>Butterflies in my stomach, stars in my eyes</p>
+            </div>
+            <div class="photo-card">
+                <div class="photo-image" style="background-image: url('./public/images/Chai.jpeg')"></div>
+                <h3>First Long Drive 🚗</h3>
+                <p>Endless roads, endless conversations, endless love</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html> 
